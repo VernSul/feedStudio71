@@ -1,26 +1,61 @@
-.App {
+body {
   text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background: linear-gradient(to right, #c31432, #240b36);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.App {
+  margin: 0 auto;
+}
+
+.Header {
+  position: fixed;
+  top: 0px;
+  background: linear-gradient(to right, #c31432, #240b36);
+  z-index: 100;
+  width: 100%;
+  height: 180px;
+  font-size: 90px;
+  padding-top: 70px
+}
+
+.PostsWall {
+  position: relative;
+  top: 150px;
+}
+
+.PostArea {
+  position: relative;
+  width: 500px;
+  margin: auto;
+  margin-top: 50px;
+  background: rgba(255, 255, 255, 0.233);
+  border-radius: 5px;
+  padding: 20px;
+  font-size: auto;
+  cursor: pointer;
+}
+
+.PostArea .textPost {
+  display: inline-block;
+  width: 190px;
+  
+}
+
+.PostArea img {
+  margin-top: -10px;
+  margin-right: 20px;
+}
+
+.BigPost {
+  position: relative;
+  top: 150px;
+  font-size: 75px;
+  cursor: pointer;
+}
+
+.BigPost h4 {
+  font-size: 90px;
 }
 
 @keyframes App-logo-spin {
